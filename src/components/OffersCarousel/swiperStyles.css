@@ -1,0 +1,23 @@
+.swiper-button-prev{
+    color: #FF7D49;
+
+    &:hover{
+        transform: scale(0.9);
+    }
+
+    &:active{
+        transform: scale(0.7);
+    }
+}
+
+.swiper-button-next{
+    color: #FF7D49;
+
+    &:hover{
+        transform: scale(0.95);
+    }
+
+    &:active{
+        transform: scale(0.85);
+    }
+}

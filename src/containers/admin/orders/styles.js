@@ -1,0 +1,27 @@
+import styled from "styled-components";
+
+export const Container = styled.div`
+    background: #EFEFEF;
+    min-height: 100vh;
+`
+
+export const ProductsImg = styled.img`
+    width: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+`
+
+export const Menu = styled.div`
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 20px 0;
+`
+
+export const LinkMenu = styled.a`
+    color: #323D5D;
+    cursor: pointer;
+    font-weight: ${props => (props.isActiveStatus ? 'bold' : '400')};
+    border-bottom: ${props => (props.isActiveStatus ? '2px solid #9758A6' : 'none')};
+    padding-bottom: 5px;
+`
