@@ -1,4 +1,11 @@
-export const singleQuote = true
-export const semi = false
-export const arrowParens = 'avoid'
-export const trailingComma = 'none'
+module.exports = {
+    semi: false,
+    singleQuote: true,
+    tabWidth: 2,
+    useTabs: false,
+    trailingComma: 'es5',
+    printWidth: 80,
+    trailingComma:'none',
+    arrowParens:'avoid'
+  };
+  

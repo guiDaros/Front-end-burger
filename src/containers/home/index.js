@@ -1,6 +1,6 @@
 import React from "react";
 
-import HomePageHeader from '../../assets/CategoriesHeader.svg'
+import HomePageHeader from '../../assets/CategoriesHeader.jpg'
 import { Container, PageHeader } from './styles'
 import { CategoryCarousel, OffersCarousel } from "../../components";
 
