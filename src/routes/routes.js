@@ -14,7 +14,7 @@ function Routes() {
             <Switch>
                 <Route component={Login} path={paths.Login} />
                 <Route component={Register} path={paths.Register}/>
-                <PrivateRoute exact component={Home} path={paths.Home} />
+                <Route exact component={Home} path={paths.Home} />
                 <PrivateRoute component={Products} path={paths.ProductsPage} />
                 <PrivateRoute component={Cart} path={paths.Cart} />
 
