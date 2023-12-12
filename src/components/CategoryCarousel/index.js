@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import api from '../../services/api';
-import imageLoading from '../../assets/Searching Image.png'
 import { Container, CarouselText, ImgSwiper, CarouselWrapper, RitoCadillaco, Button } from './styles';
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -21,6 +20,7 @@ export function CategoryCarousel() {
             try {
                 const { data, status } = await api.get('categories');
                 if (status === 200) {
+                    console.table(data)
                     setCategories(data);
                 } else {
                     console.error('A resposta da API não foi bem-sucedida:', status, data);
