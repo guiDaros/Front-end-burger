@@ -67,10 +67,20 @@ export function CategoryCarousel() {
                     {categories && categories.map(category => (
                         <SwiperSlide key={category.id}>
                             <RitoCadillaco>
+                                {/* <ImgSwiper
+                                    src={category.url}
+                                    alt="foto da categoria"
+                                    className="slidItem"
+                                /> */}
+                                {/* trying to fix it */}
                                 <ImgSwiper
                                     src={category.url}
                                     alt="foto da categoria"
                                     className="slidItem"
+                                    onError={(e) => {
+                                        e.target.onerror = null; // Evita um possível loop infinito
+                                        e.target.src = 'URL_DO_SEU_PLACEHOLDER_OU_IMAGEM_ALTERNATIVA';
+                                    }}
                                 />
                                 <Button to={{
                                     pathname: '/produtos',
