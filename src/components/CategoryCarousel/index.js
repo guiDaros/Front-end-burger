@@ -67,7 +67,6 @@ export function CategoryCarousel() {
                 >
                     {categories && categories.map(category => (
                         <SwiperSlide key={category.id}>
-                            console.table(category);
                             <RitoCadillaco>
                                 <ImgSwiper
                                     src={category.url}
