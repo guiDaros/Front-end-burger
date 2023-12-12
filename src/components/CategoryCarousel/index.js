@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import api from '../../services/api';
+import imageLoading from '../../assets/Searching Image.png'
 import { Container, CarouselText, ImgSwiper, CarouselWrapper, RitoCadillaco, Button } from './styles';
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -79,7 +80,7 @@ export function CategoryCarousel() {
                                     className="slidItem"
                                     onError={(e) => {
                                         e.target.onerror = null; // Evita um possível loop infinito
-                                        e.target.src = 'URL_DO_SEU_PLACEHOLDER_OU_IMAGEM_ALTERNATIVA';
+                                        e.target.src = {imageLoading};
                                     }}
                                 />
                                 <Button to={{
