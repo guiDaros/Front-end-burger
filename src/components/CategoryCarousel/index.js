@@ -36,6 +36,7 @@ export function CategoryCarousel() {
         function handleResize() {
             if (window.innerWidth < 720) {
                 setSlidePerView(1);
+
             } else {
                 setSlidePerView(3);
             }
