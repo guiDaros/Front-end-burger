@@ -20,7 +20,6 @@ export function CategoryCarousel() {
             try {
                 const { data, status } = await api.get('categories');
                 if (status === 200) {
-                    console.table(data)
                     setCategories(data);
                 } else {
                     console.error('A resposta da API não foi bem-sucedida:', status, data);
@@ -37,10 +36,6 @@ export function CategoryCarousel() {
         function handleResize() {
             if (window.innerWidth < 720) {
                 setSlidePerView(1);
-                // } if (window.innerWidth < 600) {
-                //     setSlidePerView(3);
-                // } if (window.innerWidth < 900) {
-                //     setSlidePerView(4);
             } else {
                 setSlidePerView(3);
             }
